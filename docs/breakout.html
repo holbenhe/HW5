@@ -1,0 +1,53 @@
+<!--
+    HW5
+    Modified from https://github.com/end3r/Gamedev-Canvas-workshop
+    ---------------
+    Henry Holben
+    CPSC 332 Web Dev
+    HW5
+    11/9/2022
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HW5</title>
+
+    <link rel="stylesheet" href="styleSheet.css">
+
+    <script src="scriptSheet.js"></script>
+
+</head>
+
+<body>
+    <canvas id="myCanvas" width="480" height="320">
+
+        //<button type="button" id="startButton">Start Game</button>
+
+    </canvas>
+
+    <fieldset id="controls">
+        <legend>Options</legend>
+        <div>
+        <button type="button" id="pauseGameButton">Toggle Pause Game</button>
+        </div>
+
+        <div>
+        Game Speed: <input type="range" min="1" max="10" value="50" class="slider" id="gameSpeed">
+        </div>
+
+        <div>
+        <button type="button" id="newGameResetButton" onclick="startNewGame()">New Game (Reset)</button>
+        <button type="button" id="continuePlayingButton">Continue Playing</button>
+        </div>
+
+        <div>
+        <button type="button" id="reloadWindowButton">Reload Window</button>
+        </div>
+        
+    </fieldset>
+</body>
+
+</html>
